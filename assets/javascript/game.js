@@ -9,11 +9,6 @@ $(document).ready(function() {
         image4: 0, 
     }
 
-    // for (var i = 0; i < 4; i++) {
-    //     var crystal = Math.floor(Math.random() * 12)
-    //     console.log(crystal);
-    // }
-
     // score (target, your, win and lost)
     var targetScore = 0;
     var yourScore = 0;
@@ -22,7 +17,6 @@ $(document).ready(function() {
 
     var newGame = function() {
         yourScore = 0;
-        // targetScore = 0;
         // target random number
         targetScore = Math.floor(Math.random() * 120) + 19;
         console.log(targetScore)
@@ -56,8 +50,7 @@ $(document).ready(function() {
 
     // check for win and lost
     var checkLostWin = function() {
-        // var lostScore = 0;
-        // var winScore = 0;
+        
         if(yourScore > targetScore) {
             alert("sorry, you lost")
             console.log("you lost")
@@ -65,7 +58,7 @@ $(document).ready(function() {
             lostScore++;
 
             $('#lostScore').html(lostScore)
-
+            //to restart the game
             newGame();
 
         } else if(yourScore == targetScore) {
@@ -75,13 +68,13 @@ $(document).ready(function() {
             winScore++;
 
             $('#winScore').html(winScore)
-
+            //to restart the game
             newGame();
 
         }
     }
 
-
+    // to start the game
     newGame();
 
 

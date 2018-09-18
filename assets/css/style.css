@@ -19,8 +19,6 @@ h1 {
 
 h5 {
     color: white;
-    /* border-color: #522dcb; */
-    /* text-decoration-color: white; */
     background-color: #522dcb;
     padding: 0 0 0 8px;
     border-radius: 2px;
@@ -32,12 +30,6 @@ p {
     background-color: white;
 }
 
-/* .panel-heading {
-    color: white;
-    background-color: #522dcb;
-    text-align: center;
-    border-radius: 2px;
-} */
 
 .card-header {
     color: white;

@@ -33,7 +33,7 @@ $(document).ready(function() {
         crystal.image4 = Math.floor(Math.random() * 12) + 1;
         console.log(crystal.image4)
 
-        $('#youScore').html(yourScore)
+        $('#yourScore').html(yourScore)
         $('#targetScore').html(targetScore)
     }
 
@@ -46,11 +46,12 @@ $(document).ready(function() {
         console.log(yourScore)
 
         checkLostWin();
+        
     }
 
     // check for win and lost
     var checkLostWin = function() {
-        
+
         if(yourScore > targetScore) {
             alert("sorry, you lost")
             console.log("you lost")
